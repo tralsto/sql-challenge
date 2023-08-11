@@ -1,45 +1,22 @@
-CREATE TABLE Departments(
-dept_no VARCHAR NOT NULL,
-dept_name VARCHAR NOT NULL,
-PRIMARY KEY (dept_no)
-);
+-- List the employee number, last name, first name, sex, and salary of each employee.
+SELECT
 
-CREATE TABLE Department_Manager(
-dept_no VARCHAR NOT NULL,
-emp_no INTEGER NOT NULL,
-PRIMARY KEY (emp_no),
-FOREIGN KEY(dept_no) REFERENCES Departments (dept_no)
-);
+-- List the first name, last name, and hire date for the employees who were hired in 1986.
 
-CREATE TABLE Department_Employee(
-emp_no INTEGER NOT NULL,
-dept_no VARCHAR NOT NULL,
-PRIMARY KEY (emp_no),
-FOREIGN KEY(dept_no) REFERENCES Departments (dept_no)
-);
 
-CREATE TABLE Titles (
-title_id VARCHAR NOT NULL,
-title VARCHAR NOT NULL,
-PRIMARY KEY (title_id)
-);
+-- List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
-CREATE TABLE Employees(
-emp_no INTEGER NOT NULL,
-emp_title_id VARCHAR NOT NULL,
-birth_date VARCHAR NOT NULL,
-first_name VARCHAR NOT NULL,
-last_name VARCHAR NOT NULL,
-sex VARCHAR NOT NULL,
-hire_date VARCHAR NOT NULL,
-PRIMARY KEY (emp_no),
-FOREIGN KEY(emp_no) REFERENCES Department_Employee (emp_no),
-FOREIGN KEY(emp_title_id) REFERENCES Titles (title_id)
-);
 
-CREATE TABLE Salaries(
-emp_no INTEGER NOT NULL,
-salary INTEGER NOT NULL,
-PRIMARY KEY(emp_no),
-FOREIGN KEY(emp_no) REFERENCES Employees (emp_no)
-);
+-- List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+
+
+-- List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+
+
+-- List each employee in the Sales department, including their employee number, last name, and first name.
+
+
+-- List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+
+-- List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
