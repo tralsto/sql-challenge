@@ -2,7 +2,7 @@
 
 ## In this module, the task at hand was to show our proficiency with utilizing SQL within the pgAdmin Application. 
 
-## First, I imported the tables in the strategic order to enable the usage of the data correctly. After troubshooting this sequence, I able to run the queries listed below to achieve the desired data.
+## First, I imported the tables in the strategic order to enable the usage of the data correctly. After troubshooting this table schema sequence, I able to run the queries listed below to achieve the desired data.
 
 ### 1. List the employee number, last name, first name, sex, and salary of each employee.
 
